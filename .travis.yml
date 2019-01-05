@@ -7,6 +7,10 @@ cache:
 script:
   - npm test
   - npm run build
+
+after_success:
+ — firebase use react-test-4feb1
+
 deploy:
   provider: firebase
   token:
