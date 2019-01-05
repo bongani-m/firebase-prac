@@ -8,7 +8,7 @@ it('renders without crashing', () => {
 
 it('renders welcome message', () => {
   const wrapper = shallow(<App />);
-  const welcome = <h1 id='app'>Welcome to My World!</h1>;
+  const welcome = <h1 id='app'>Welcome to My World!!</h1>;
   // expect(wrapper.contains(welcome)).toBe(true);
   expect(wrapper.contains(welcome)).toEqual(true);
 });
