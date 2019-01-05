@@ -1,15 +1,17 @@
 language: node_js
 node_js:
-  - "stable"
+- stable
 cache:
   directories:
   - node_modules
 script:
-  - npm test
-  - npm run build
-
+- npm test
+- npm run build
 deploy:
   provider: firebase
   token:
-    secure: "encrypted_firebase_CI_token"
-  project: "react-test-4feb1"
+    secure: encrypted_firebase_CI_token
+  project: react-test-4feb1
+env:
+  global:
+    secure: wG+QNj5rgBomWi++9wjosT1coga27SXS9gF+oI6FlE4Q7V2Ad1e/cIGEZEptlJBFkW/40LB9H/6vs/RTwbUMLZJbQi8pzY58FkWxbI/yikGBGLxfBLYByg6ZO8rQZ80yEUB/zORbHUQOOpKVueZp4R6wlP50KlkANKNeoIplssGpjgXDV6J80K0LmKatpv0OFID+fsqbpqLm3viIQF01qOpUA/9ZBBta1Y/MHbtRgPXKJOgAxPtW6jTCUUbyukShQidL1requGPitIwzRNG9QLa4wJgA25KII8/t+wHXGS3aasNKus8IEeAvIjlFW81HR9UF+19gMptbIf0Ai8Qpk4CEbXPgdMrpqSdPLJm1v9x6FSM3NYo4qJ94kKqD/Y4DR0O5pAEkDSB/XMHmmFgKrK6zAwOTVSUm+ZiceLs9ERs0lEo+u1eLqvk/WVMFWBsZeVQiXSIl3uGisidlGgyE0bwosO6bOZ/NY4UnABdasWQ/3MBiy/ESAHNFQLl+fMbzVvd40LG6e9DUxwmaGSwnCR8nwVmsI23bgfMQV6x0x0ICefGV5su0MsdyAaJAbkifxYznCEz9Jg3hhTI0mqjlHaCy4so49X4J1CAzElv581yBDEYjMIugjS0ZhR3WFrTljZGy2kALxmNVRG8KESpK7uYI9jmokd+r4GB9keWUjhY=
